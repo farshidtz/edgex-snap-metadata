@@ -46,11 +46,17 @@ func main() {
 	for scanner.Scan() {
 		line := scanner.Text()
 		if lineNum == 0 {
+			// line 0 is the summary
 			summary = line
-		} else if lineNum == 1 && line == "---" {
-			// separator
+		} else if lineNum == 1 {
+			// line 1 is the seperator
+			if line != "---" {
+				log.Fatalln("Missing three-dashes (---) separator on line 1 between summary and description")
+			}
+			lineNum++
 			continue
 		} else {
+			// lines 2-end are the description
 			description += line + "\n"
 		}
 		lineNum++
