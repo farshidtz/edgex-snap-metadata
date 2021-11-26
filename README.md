@@ -1,6 +1,12 @@
 # edgex-snap-metadata
 This repo contains the metadata of EdgeX snaps along with utility scripts to generate dummy snaps that can used to update the metadata of those snaps in the snap store.
 
+## Requirements
+Snapcraft and Go:
+```bash
+sudo snap install snapcraft go
+```
+
 ## Usage
 Login once:
 ```
