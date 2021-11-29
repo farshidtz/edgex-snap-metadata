@@ -1,7 +1,15 @@
-EdgeX Camera Device Service
+EdgeX Device Camera
 ---
-The EdgeX Camera Device Service is developed to control/communicate ONVIF-compliant
-cameras accessible via http in an EdgeX deployment.
-Initially the daemon in the snap is disabled - a device profile must be
-provisioned externally with core-metadata or provided to device-camera inside
-"$SNAP_DATA/config/device-camera/res" before starting.
+The EdgeX Device Camera is a device service for connecting ONVIF-compliant cameras to EdgeX.
+
+**Snap usage instructions**  
+https://github.com/edgexfoundry/device-camera-go/blob/main/snap/README.md
+
+**Source code and more info**  
+https://github.com/edgexfoundry/device-camera-go
+
+**Service documentation**  
+https://docs.edgexfoundry.org
+
+**Reference platform snap**  
+https://snapcraft.io/edgexfoundry
