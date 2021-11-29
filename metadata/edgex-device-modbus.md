@@ -1,0 +1,3 @@
+Connect data Modbus to EdgeX using device-modbus reference Device Service
+---
+The official reference EdgeX device-modbus Device Service built using the device-sdk-go to interact with Modbus devices. Initially the daemon in the snap is disabled - a device profile must be provisioned externally with core-metadata or provided to device-modbus inside "$SNAP_DATA/config/device-modbus/res" before starting.
