@@ -13,7 +13,7 @@ import (
 
 func main() {
 	name := flag.String("name", "", "name of the snap")
-	icon := flag.Bool("upload-icon", false, "whether the default icon should be uploaded")
+	icon := flag.Bool("default-icon", false, "whether the default icon should be included")
 	flag.Parse()
 
 	if *name == "" {

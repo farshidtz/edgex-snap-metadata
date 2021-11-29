@@ -22,9 +22,9 @@ Create the `snapcraft.yaml` file:
 go run create-snapcraft.go --name=edgex-device-gpio
 ```
 
-Set `--upload-icon` to include the default icon in case it needs to be updated as part of the metadata upload.
+Set `--default-icon` to include the default icon in case it needs to be updated as part of the metadata upload.
 
 Build snap and upload metadata:
 ```bash
-./upload-metadata edgex-device-gpio
+./upload-metadata.sh edgex-device-gpio
 ```
