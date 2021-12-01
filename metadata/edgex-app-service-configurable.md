@@ -10,6 +10,7 @@ https://github.com/edgexfoundry/app-service-configurable/blob/main/snap/README.m
 https://github.com/edgexfoundry/app-service-configurable
 
 **Service documentation**  
+* v1.3: https://docs.edgexfoundry.org/1.3/microservices/application/AppServiceConfigurable
 * v2.1: https://docs.edgexfoundry.org/2.1/microservices/application/AppServiceConfigurable
 * v2.2: https://docs.edgexfoundry.org/2.2/microservices/application/AppServiceConfigurable
 
