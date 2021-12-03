@@ -11,7 +11,7 @@ https://github.com/edgexfoundry/edgex-cli/blob/main/snap/README.md
 **Source code and more info**  
 https://github.com/edgexfoundry/edgex-cli
 
-**Service usage examples**  
+**Getting started**  
 * v1.3: https://docs.edgexfoundry.org/1.3/getting-started/tools/Ch-CommandLineInterface
 * v2.1: https://docs.edgexfoundry.org/2.1/getting-started/tools/Ch-CommandLineInterface
 * v2.2: https://docs.edgexfoundry.org/2.2/getting-started/tools/Ch-CommandLineInterface

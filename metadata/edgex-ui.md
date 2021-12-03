@@ -12,7 +12,7 @@ https://github.com/edgexfoundry/edgex-ui/blob/main/snap/README.md
 **Source code and more info**  
 https://github.com/edgexfoundry/edgex-ui
 
-**Service usage examples**  
+**Getting started**  
 * v2.1: https://docs.edgexfoundry.org/2.1/getting-started/tools/Ch-GUI
 * v2.2: https://docs.edgexfoundry.org/2.2/getting-started/tools/Ch-GUI
 
