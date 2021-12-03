@@ -1,6 +1,7 @@
 EdgeX Device Camera
 ---
 The EdgeX Device Camera is a device service for connecting ONVIF-compliant cameras to EdgeX.
+The services enabled EdgeX to read from and control the camera.
 
 **Snap usage instructions**  
 https://github.com/edgexfoundry/device-camera-go/blob/main/snap/README.md
