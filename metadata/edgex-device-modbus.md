@@ -11,10 +11,13 @@ https://github.com/edgexfoundry/device-modbus-go/blob/main/snap/README.md
 **Source code and more info**  
 https://github.com/edgexfoundry/device-modbus-go
 
-**Service documentation**  
+**Service usage examples**  
 * v1.3: https://docs.edgexfoundry.org/1.3/examples/Ch-ExamplesAddingModbusDevice
 * v2.1: https://docs.edgexfoundry.org/2.1/examples/Ch-ExamplesAddingModbusDevice
 * v2.2: https://docs.edgexfoundry.org/2.2/examples/Ch-ExamplesAddingModbusDevice
+
+**EdgeX documentation**  
+https://docs.edgexfoundry.org
 
 **Reference platform snap**  
 https://snapcraft.io/edgexfoundry

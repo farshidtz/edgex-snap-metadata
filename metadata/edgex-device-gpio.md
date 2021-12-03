@@ -14,7 +14,7 @@ https://github.com/edgexfoundry/device-gpio/blob/main/snap/README.md
 **Source code and more info**  
 https://github.com/edgexfoundry/device-gpio
 
-**Service documentation**  
+**EdgeX documentation**  
 https://docs.edgexfoundry.org
 
 **Reference platform snap**  

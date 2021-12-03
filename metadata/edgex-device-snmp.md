@@ -18,7 +18,7 @@ https://github.com/edgexfoundry/device-snmp-go
 * v2.1: https://docs.edgexfoundry.org/2.1/examples/Ch-ExamplesAddingSNMPDevice
 * v2.2: https://docs.edgexfoundry.org/2.2/examples/Ch-ExamplesAddingSNMPDevice
 
-**EdgeX Documentation**  
+**EdgeX documentation**  
 https://docs.edgexfoundry.org
 
 **Reference platform snap**  

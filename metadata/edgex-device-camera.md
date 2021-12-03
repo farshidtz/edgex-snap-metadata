@@ -8,7 +8,7 @@ https://github.com/edgexfoundry/device-camera-go/blob/main/snap/README.md
 **Source code and more info**  
 https://github.com/edgexfoundry/device-camera-go
 
-**Service documentation**  
+**EdgeX documentation**  
 https://docs.edgexfoundry.org
 
 **Reference platform snap**  
