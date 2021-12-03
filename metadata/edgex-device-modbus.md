@@ -1,3 +1,20 @@
-Connect data Modbus to EdgeX using device-modbus reference Device Service
+EdgeX Device Modbus
 ---
-The official reference EdgeX device-modbus Device Service built using the device-sdk-go to interact with Modbus devices. Initially the daemon in the snap is disabled - a device profile must be provisioned externally with core-metadata or provided to device-modbus inside "$SNAP_DATA/config/device-modbus/res" before starting.
+The EdgeX Device Modbus is a device service for adding Modbus communication
+capabilities to EdgeX.
+This enables reading and writing data to a device over the Modbus TCP or
+Modbus RTU protocol versions.
+
+**Snap usage instructions**  
+https://github.com/edgexfoundry/device-modbus-go/blob/main/snap/README.md
+
+**Source code and more info**  
+https://github.com/edgexfoundry/device-modbus-go
+
+**Service documentation**  
+* v1.3: https://docs.edgexfoundry.org/1.3/examples/Ch-ExamplesAddingModbusDevice
+* v2.1: https://docs.edgexfoundry.org/2.1/examples/Ch-ExamplesAddingModbusDevice
+* v2.2: https://docs.edgexfoundry.org/2.2/examples/Ch-ExamplesAddingModbusDevice
+
+**Reference platform snap**  
+https://snapcraft.io/edgexfoundry
