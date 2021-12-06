@@ -1,6 +1,6 @@
 EdgeX Device MQTT
 ---
-The EdgeX Device MQTT is a device service for connecting an MQTT Broker to EdgeX.
+EdgeX Device MQTT is a device service for connecting an MQTT Broker to EdgeX.
 The service acts as a device which can send data or receive and respond to commands
 by publishing and subscribing to MQTT topics.
 

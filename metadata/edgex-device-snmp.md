@@ -1,6 +1,6 @@
 EdgeX Device SNMP
 ---
-The EdgeX Device SNMP is a service which enables EdgeX to communicate with
+EdgeX Device SNMP is a service which enables EdgeX to communicate with
 devices over SNMP (Simple Netowrk Management Protocol).
 This enables both reading and writing data to a devices over the SNMP protocol.
 

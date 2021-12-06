@@ -1,6 +1,6 @@
 EdgeX Device GPIO
 ---
-EdgeX Device GPIO is a device service for connecting GPIO devices to EdgeX Foundry.
+EdgeX Device GPIO is a device service for connecting GPIO devices to EdgeX.
 
 ** Functionality **
 * This device service uses sysfs ABI (default) or chardev ABI (experiment) 

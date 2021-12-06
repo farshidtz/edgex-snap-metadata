@@ -1,9 +1,7 @@
 EdgeX Device Modbus
 ---
-The EdgeX Device Modbus is a device service for adding Modbus communication
-capabilities to EdgeX.
-This enables reading and writing data to a device over the Modbus TCP or
-Modbus RTU protocol versions.
+EdgeX Device Modbus is a device service for adding Modbus communication capabilities to EdgeX.
+It supports read/write over both Modbus TCP and Modbus RTU protocols.
 
 **Snap usage instructions**  
 https://github.com/edgexfoundry/device-modbus-go/blob/main/snap/README.md
