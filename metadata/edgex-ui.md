@@ -7,10 +7,10 @@ single instance of EdgeX Foundry.
 For a command-line interface, see https://snapcraft.io/edgex-cli
 
 **Snap usage instructions**  
-https://github.com/edgexfoundry/edgex-ui/blob/main/snap/README.md
+https://github.com/edgexfoundry/edgex-ui-go/blob/main/snap/README.md
 
 **Source code and more info**  
-https://github.com/edgexfoundry/edgex-ui
+https://github.com/edgexfoundry/edgex-ui-go
 
 **Getting started**  
 * v2.1: https://docs.edgexfoundry.org/2.1/getting-started/tools/Ch-GUI
