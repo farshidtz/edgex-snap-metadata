@@ -1,7 +1,21 @@
-The reference EdgeX App Service Configurable
+EdgeX App Service Configurable
 ---
-The reference EdgeX app-service-configurable is built using the App Functions SDK. This service is provided as an easy way to get started with processing data flowing through EdgeX. This service leverages the App Functions SDK and provides a way for developers to use configuration instead of having to compile standalone services to utilize built in functions in the SDK. For a full list of supported/built-in functions view the documentation located here:
+This service is provided as an easy way to get started with processing data flowing through EdgeX.
+It leverages the App Functions SDK and provides a way for developers to use configuration instead of writing code to utilize the built-in functionalities.
 
-https://docs.edgexfoundry.org/1.2/microservices/application/ApplServices/
+**Snap usage instructions**  
+https://github.com/edgexfoundry/app-service-configurable/blob/main/snap/README.md
 
-Initially the daemon in the snap is disabled - this allows the configuration to be modified and provided to app-service-config in "$SNAP_DATA/config/app-service-configurable/res" before starting.
+**Source code and more info**  
+https://github.com/edgexfoundry/app-service-configurable
+
+**Service usage examples**  
+* v1.3: https://docs.edgexfoundry.org/1.3/microservices/application/AppServiceConfigurable
+* v2.1: https://docs.edgexfoundry.org/2.1/microservices/application/AppServiceConfigurable
+* v2.2: https://docs.edgexfoundry.org/2.2/microservices/application/AppServiceConfigurable
+
+**EdgeX Documentation**  
+https://docs.edgexfoundry.org
+
+**Reference platform snap**  
+https://snapcraft.io/edgexfoundry

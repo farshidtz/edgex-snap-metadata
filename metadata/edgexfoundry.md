@@ -42,7 +42,7 @@ https://docs.edgexfoundry.org/2.1/getting-started/Ch-GettingStartedSnapUsers
 Snap usage instructions  
 https://github.com/edgexfoundry/edgex-go/blob/main/snap/README.md
 
-Service documentation  
+EdgeX documentation  
 https://docs.edgexfoundry.org
 
 Source code  
