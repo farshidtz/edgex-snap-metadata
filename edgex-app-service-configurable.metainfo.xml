@@ -1,0 +1,24 @@
+<component>
+  <summary>EdgeX App Service Configurable</summary>
+  <description><![CDATA[
+This service is provided as an easy way to get started with processing data flowing through EdgeX.
+It leverages the App Functions SDK and provides a way for developers to use configuration instead of writing code to utilize the built-in functionalities.
+
+**Snap usage instructions**  
+https://github.com/edgexfoundry/app-service-configurable/blob/main/snap/README.md
+
+**Source code and more info**  
+https://github.com/edgexfoundry/app-service-configurable
+
+**Service usage examples**  
+* v1.3: https://docs.edgexfoundry.org/1.3/microservices/application/AppServiceConfigurable
+* v2.1: https://docs.edgexfoundry.org/2.1/microservices/application/AppServiceConfigurable
+* v2.2: https://docs.edgexfoundry.org/2.2/microservices/application/AppServiceConfigurable
+
+**EdgeX Documentation**  
+https://docs.edgexfoundry.org
+
+**Reference platform snap**  
+https://snapcraft.io/edgexfoundry
+]]></description>
+</component>
