@@ -1,0 +1,70 @@
+name: AppStream
+
+on:
+  push:
+    branches: [ main, feat-appstream ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.17
+
+    - name: Generate appstream files
+      run: |
+        for entry in "metadata"/*
+        do
+          go run generate-appstream.go --input="$entry"
+        done
+
+    - name: Record commit message
+      run: git show -s --format=%s > commit.txt
+    
+    - name: Upload files for next job
+      uses: actions/upload-artifact@v2
+      with:
+        name: appstream-files
+        path: |
+          metadata/*.metainfo.xml
+          commit.txt
+
+  stage:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout appstream branch
+      uses: actions/checkout@v2
+      with:
+        ref: appstream
+
+    - name: Download files from previous job
+      uses: actions/download-artifact@v2
+      with:
+        name: appstream-files
+
+    - name: Commit files
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+
+        # move appstream files to top level
+        mv metadata/*.metainfo.xml .
+
+        added=$(git add --verbose *.metainfo.xml)
+        if [ ! -z "$added" ]; then
+          # commit using the original commit message
+          git commit -m "ci: $(cat commit.txt)"
+        else
+          echo "Detected no changes."
+        fi
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: appstream
