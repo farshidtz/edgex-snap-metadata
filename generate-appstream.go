@@ -1,3 +1,19 @@
+/*
+This script takes markdown input in the following format:
+	SUMMARY
+	---
+	DESCRIPTION
+
+And outputs XML in the following format:
+	<component>
+	<summary>SUMMARY</summary>
+	<description><![CDATA[
+	DESCRIPTION
+	]]></description>
+	<icon type="remote">hardcoded_url</icon>
+	</component>
+*/
+
 package main
 
 import (
@@ -11,7 +27,10 @@ import (
 	"strings"
 )
 
-const appstreamExt = ".metainfo.xml"
+const (
+	appstreamExt = ".metainfo.xml"
+	icon         = "https://github.com/farshidtz/edgex-snap-metadata/raw/appstream-icon/icon.png"
+)
 
 func main() {
 	input := flag.String("input", "", "path to md file")
@@ -31,6 +50,10 @@ func main() {
 			// not interpreted as XML markup
 			Body string `xml:",cdata"`
 		} `xml:"description"`
+		Icon struct {
+			Path string `xml:",chardata"`
+			Type string `xml:"type,attr"`
+		} `xml:"icon"`
 	}
 
 	file, err := os.Open(*input)
@@ -78,6 +101,8 @@ func main() {
 
 	component.Summary = summary
 	component.Description.Body = "\n" + description
+	component.Icon.Type = "remote"
+	component.Icon.Path = icon
 
 	output, err := xml.MarshalIndent(&component, "", "  ")
 	if err != nil {
