@@ -71,5 +71,5 @@ https://github.com/edgexfoundry/edgex-go
 * Kong: https://github.com/Kong/kong
 * Vault: https://github.com/hashicorp/vault
 ]]></description>
-  <icon type="remote">https://github.com/farshidtz/edgex-snap-metadata/raw/appstream-icon/icon.png</icon>
+  <icon type="local">edgex-snap-icon.png</icon>
 </component>

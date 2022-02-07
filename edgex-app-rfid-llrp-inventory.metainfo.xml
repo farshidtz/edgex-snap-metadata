@@ -3,5 +3,5 @@
   <description><![CDATA[
 Edgex application service for processing tag reads, producing events such as 'Arrived', 'Moved', 'Departed', configure and manage the LLRP readers via commands
 ]]></description>
-  <icon type="remote">https://github.com/farshidtz/edgex-snap-metadata/raw/appstream-icon/icon.png</icon>
+  <icon type="local">edgex-snap-icon.png</icon>
 </component>

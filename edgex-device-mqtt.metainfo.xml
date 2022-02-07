@@ -22,5 +22,5 @@ https://docs.edgexfoundry.org
 **Reference platform snap**  
 https://snapcraft.io/edgexfoundry
 ]]></description>
-  <icon type="remote">https://github.com/farshidtz/edgex-snap-metadata/raw/appstream-icon/icon.png</icon>
+  <icon type="local">edgex-snap-icon.png</icon>
 </component>
