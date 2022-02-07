@@ -15,7 +15,7 @@ jobs:
     - name: Check spelling
       uses: check-spelling/check-spelling@v0.0.20-alpha4
       with:
-        only: metadata
+        experimental_path: metadata
 
     - name: Set up Go
       uses: actions/setup-go@v2
