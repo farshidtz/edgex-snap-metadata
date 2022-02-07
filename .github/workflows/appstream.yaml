@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Check spelling
+      uses: check-spelling/check-spelling@v0.0.20-alpha4
+      with:
+        experimental_path: metadata
 
     - name: Set up Go
       uses: actions/setup-go@v2
