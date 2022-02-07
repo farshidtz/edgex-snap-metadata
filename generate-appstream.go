@@ -10,7 +10,7 @@ And outputs XML in the following format:
 	<description><![CDATA[
 	DESCRIPTION
 	]]></description>
-	<icon type="remote">hardcoded_url</icon>
+	<icon type="local">hardcoded_relative_path</icon>
 	</component>
 */
 
@@ -27,14 +27,15 @@ import (
 	"strings"
 )
 
-const appstreamExt = ".metainfo.xml"
+const (
+	// appstreamExt the suffix of output appstream file
+	appstreamExt = ".metainfo.xml"
+	// iconPath is the path to icon, relative path to the output appstream file
+	iconPath = "edgex-snap-icon.png"
+)
 
 func main() {
 	input := flag.String("input", "", "path to md file")
-	iconURL := flag.String(
-		"icon-url",
-		"https://github.com/canonical/edgex-snap-metadata/raw/main/icon.png",
-		"URL of icon")
 	flag.Parse()
 
 	if *input == "" {
@@ -102,15 +103,15 @@ func main() {
 
 	component.Summary = summary
 	component.Description.Body = "\n" + description
-	component.Icon.Type = "remote"
-	component.Icon.Path = *iconURL
+	component.Icon.Type = "local"
+	component.Icon.Path = iconPath
 
 	output, err := xml.MarshalIndent(&component, "", "  ")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	log.Printf("Output:\n%s\n\n", output)
+	// log.Printf("Output:\n%s\n\n", output)
 
 	filename := strings.TrimSuffix(file.Name(), ".md") + appstreamExt
 	log.Printf("Writing output to %s", filename)

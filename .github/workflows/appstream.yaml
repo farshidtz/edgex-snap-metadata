@@ -2,7 +2,9 @@ name: AppStream
 
 on:
   push:
-    branches: [ main, feat-appstream ]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
@@ -17,7 +19,7 @@ jobs:
 
     - name: Generate appstream files
       run: |
-        for entry in "metadata"/*
+        for entry in "metadata"/*.md
         do
           go run generate-appstream.go --input="$entry"
         done
@@ -32,10 +34,11 @@ jobs:
         path: |
           metadata/*.metainfo.xml
           commit.txt
-
+  
   stage:
     needs: build
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
     - name: Checkout appstream branch
       uses: actions/checkout@v2

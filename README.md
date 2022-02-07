@@ -1,6 +1,8 @@
 # edgex-snap-metadata
 This repo contains the metadata of EdgeX snaps along with utility scripts to generate appstream metadata files.
 
+The output files along with the EdgeX snaps icon are stored in the [appstream] branch.
+
 ## Metadata
 
 The [metadata](metadata) directory contains the metadata of snaps.
@@ -28,6 +30,8 @@ go run generate-appstream.go --input=metadata/edgex-device-gpio.md
 ```
 
 ## CI
-Markdown files in main get converted automatically and added to the [appstream branch](https://github.com/canonical/edgex-snap-metadata/tree/appstream).
+Markdown files in main get converted automatically and added to the [appstream] branch.
 
 See [.github/workflows/appstream.yaml](.github/workflows/appstream.yaml)
+
+[appstream]: https://github.com/canonical/edgex-snap-metadata/tree/appstream
